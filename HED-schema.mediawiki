@@ -8,12 +8,19 @@ From version 2.2, HED adheres to http://semver.org/ versioning.
 !# start hed 
 
 '''Event''' 
-* Stimulus presentation <nowiki>{purpose="Experimental, Environmental"} [Primary category for time-locked stimulus events.]</nowiki>
-** Visual <nowiki>{rendering="Screen, Viewport", scene=Item} [Visual stimulus presentation event.] </nowiki> 
-** Auditory <nowiki>{target=Item} [Auditory stimulus presentation event.] </nowiki> 
-* Participant action
-* Data phenomena
-* Experiment control
+* Stimulus presentation <nowiki>{label, description, purpose="Experimental, Environmental"} [Primary category for time-locked stimulus events.]</nowiki>
+** Visual <nowiki>{label, description,rendering="Screen, Viewport", scene=Item} [Visual stimulus presentation event.] </nowiki> 
+** Auditory <nowiki>{label, description,target=Item} [Auditory stimulus presentation event.] </nowiki> 
+* Participant action <nowiki>{label, description}  </nowiki> 
+* Data phenomena <nowiki>{label, description}  </nowiki> 
+* Experiment control <nowiki>{label, description} </nowiki> 
+
+'''Item''' 
+* Tangible <nowiki>{size}</nowiki>
+** Screen <nowiki>{size, color} </nowiki> 
+** Geometry <nowiki>{size, color} </nowiki> 
+*** Rectangle <nowiki>{size, color} </nowiki> 
+* Intangible
 
 '''Unit classes''' 
 * acceleration <nowiki>{default=cm-per-s2}</nowiki> 
