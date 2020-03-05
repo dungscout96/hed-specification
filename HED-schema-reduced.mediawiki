@@ -34,20 +34,23 @@ From version 2.2, HED adheres to http://semver.org/ versioning.
 
 '''Item''' <nowiki>{extensionAllowed}</nowiki>
 * Object <nowiki> {extensionAllowed} [Visually discernable objects in the physical world. This item excludes sounds that are Items but not objects]</nowiki>
-** Vehicle 
+** Animal
+** Building
+** Clothing
+** Food 
 ** Human
 *** Body parts
 **** Face 
 ***** Whole face with hair 
 ***** Whole face without hair 
 ***** Cut-out 
-***** Parts only 
-** Animal
+***** Parts only
 ** Plant 
-** Building 
-** Vehicle
-** Food 
-** Clothing 
+** Response device
+*** Button
+*** Key
+*** Joystick
+** Vehicle 
 * Geometric shape
 ** 2D shape
 ** 3D shape
@@ -93,8 +96,41 @@ From version 2.2, HED adheres to http://semver.org/ versioning.
 
 
 
-'''Action'''<nowiki>{extensionAllowed}[May or may not be associated with a prior stimulus.]</nowiki> 
-* Involuntary <nowiki>[Like sneezing or tripping on something or hiccuping]</nowiki> 
+'''Action'''<nowiki>{extensionAllowed}[May or may not be associated with a prior stimulus. Action can be grouped with an Item to specify the target of the action. For example use (Action/Press, Item/Object/Response device/Button) to tag a button pressing action]</nowiki> 
+* Allow <nowiki>[Allow access to something such as allowing a car to pass]</nowiki>
+* Attend
+* Bend
+* Blink
+* Breathe
+* Close <nowiki>[Continue to curl and uncurl toes, for example in motor imagery paradigms.]</nowiki>
+* Control vehicle <nowiki>[Controlling an object that you are aboard]</nowiki>
+** Drive <nowiki>[Driving a vehicle such as a car]</nowiki> 
+** Stop <nowiki>[Brake a car]</nowiki> 
+** Pilot <nowiki>[Pilot a vehicle such as an airplane]</nowiki> 
+* Count
+* Course correction <nowiki>[Change the direction of a reach in the middle to adjust for a moving target.]</nowiki>
+* Cross boundary
+** Arrive 
+** Depart 
+* Curl
+* Dance
+* Deep breath
+* Deny <nowiki> [Deny access to something such as preventing someone to pass]</nowiki>
+* Detect
+* Discriminate
+* Encode
+* Evade
+* Fixate
+* Flex
+* Generate
+* Grab
+* Groan
+* Hold
+* Hold breath
+* Hum
+* Interact
+** With human
+* Involuntary <nowiki>[Like sneezing or tripping on something or hiccuping]</nowiki>
 ** Hiccup 
 ** Cough 
 ** Sneeze 
@@ -106,90 +142,51 @@ From version 2.2, HED adheres to http://semver.org/ versioning.
 ** Sniffle 
 ** Burp 
 ** Drop <nowiki>[For example something  drops from subject’s hand]</nowiki>
-* Make fist
-* Curl toes
-* Open and close <nowiki>[Continue to curl and uncurl toes, for example in motor imagery paradigms.]</nowiki>
-* Button press <nowiki>{extensionAllowed}</nowiki> 
-* Button hold <nowiki>[Press a button and keep it pressed]</nowiki> 
-* Button release 
-* Cross boundary 
-** Arrive 
-** Depart 
-* Speech 
-* Hum 
-* Eye saccade <nowiki> [Use Attribute/Peak for the middle of saccade and Attribute/Temporal/Onset for the start of a saccade]</nowiki> 
-* Eye fixation 
-* Eye blink
-* Eye close <nowiki>[Close eyes and keep closed for more than approximately 0.1 s]</nowiki> 
-* Eye open <nowiki>[Open eyes and keep open for more than approximately 0.1 s]</nowiki>
-* Turn <nowiki>[Change in direction of movement or orientation. This includes both turn during movement on a path and also rotations such as head turns]</nowiki> 
-* Point 
-* Push 
-* Grab 
-* Tap <nowiki>[When there is nothing to be pressed for example like tapping a finger on a chair surface to follow a rhythm]</nowiki> 
-* Lift 
-* Reach <nowiki>[Requires a goal such as reaching to touch a button or to grab something. Stretching your body does not count as reach.]</nowiki> 
+* Laugh
+* Lift
+* Make
+* Move
+* Name
+* Open
+* Point
+* Press
+* Push
+* Reach <nowiki>[Requires a goal such as reaching to touch a button or to grab something. Stretching your body does not count as reach.]</nowiki>
 ** To Grab 
 ** To Touch 
-* Course correction <nowiki>[Change the direction of a reach in the middle to adjust for a moving target.]</nowiki> 
-* Interact
-** With human
-* Take survey
-* Stretch <nowiki>[Stretch your body such as when you wake up]</nowiki> 
-* Bend 
-* Deep breath 
-* Laugh 
-* Sigh 
-* Groan 
-* Scratch 
-* Switch attention  
+* Read
+* Recall
+* Release
+* Repeat
+* Rest
+* Saccade <nowiki> [Use Attribute/Peak for the middle of saccade and Attribute/Temporal/Onset for the start of a saccade]</nowiki>
+* Scratch
+* Shrug
+* Sigh
+* Sing
+* Smile
+* Speak
+* Step 
+** Around
+** On
+** Over
+* Stretch <nowiki>[Stretch your body such as when you wake up]</nowiki>
+* Swallow
+* Switch attention
 ** Intramodal <nowiki>[In the same modality but with a change in details  such as changing from paying attention to red dots and instead of blue dots]</nowiki> 
 ** Intermodal <nowiki>[Between modalities such as changing from audio to visual]</nowiki> 
 *** From modality 
 *** To modality 
-* Walk 
+* Take survey
+* Tap <nowiki>[When there is nothing to be pressed for example like tapping a finger on a chair surface to follow a rhythm]</nowiki>
+* Teleoperate <nowiki>[Control an object that you are not aboard]</nowiki>
+* Track
+* Turn <nowiki>[Change in direction of movement or orientation. This includes both turn during movement on a path and also rotations such as head turns]</nowiki>
+* Walk
 ** Stride <nowiki>[Use onset and offset attributes to indicate different walking stride stages]</nowiki> 
 ** Faster <nowiki>[increasing the speed of walking]</nowiki> 
 ** Slower <nowiki>[decreasing the speed of walking]</nowiki> 
-* Control vehicle <nowiki>[Controlling an object that you are aboard]</nowiki> 
-** Drive <nowiki>[Driving a vehicle such as a car]</nowiki> 
-** Stop <nowiki>[Brake a car]</nowiki> 
-** Pilot <nowiki>[Pilot a vehicle such as an airplane]</nowiki> 
-* Teleoperate <nowiki>[Control an object that you are not aboard]</nowiki> 
-* Allow <nowiki>[Allow access to something such as allowing a car to pass]</nowiki> 
-* Deny <nowiki> [Deny access to something such as preventing someone to pass]</nowiki> 
-* Step around 
-* Step over 
-* Step on 
-* Swallow 
-* Flex 
-* Evade 
-* Shrug 
-* Dance 
-* Open mouth 
-* Whistle 
-* Read 
-* Attend
-* Recall
-* Generate
-* Repeat
-* Hold breath 
-* Breathe
-* Rest 
-* Count 
-* Move 
-** Upper torso 
-** Lower torso 
-** Whole body 
-* Speak
-* Sing
-* Detect
-* Name 
-* Smile 
-* Discriminate 
-* Track
-* Encode 
-* Eye-blink inhibit
+* Whistle
 
 '''Participant''' <nowiki>{extensionAllowed}</nowiki> 
 * Effect <nowiki> [How the stimulus effects the participants]</nowiki> 
