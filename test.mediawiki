@@ -1,0 +1,8 @@
+!# start hed 
+
+'''Attribute''' <nowiki>{extensionAllowed}[Vocabulary tree for properties.]</nowiki>
+* Informational <nowiki>[Informational properties.]</nowiki>
+** Label <nowiki>{requireChild} [A string of 20 or fewer characters.]</nowiki>
+*** <nowiki># {takesValue}</nowiki> 
+** ID <nowiki>{requireChild} [An alphanumeric identifier for an item or agent.]</nowiki>
+*** <nowiki># {takesValue}</nowiki>
